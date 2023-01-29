@@ -4,6 +4,6 @@ G=$1
 if [[ $G == "" ]]; then echo "Error, invalid Latitude!"; exit 1; fi
 
 sudo sed -i -E '/USER/s/^USER=.*/USER='${G}'/gI' /boot/adsb-config.txt
-sudo systemctl restart adsbexchange-mlat
+sudo systemctl restart adsb-mlat
 
 

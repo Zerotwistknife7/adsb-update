@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ -f /boot/adsb-config.txt ]; then
-    UUID_FILE="/boot/adsbx-uuid"
+    UUID_FILE="/boot/adsb-uuid"
 else
-    mkdir -p /usr/local/share/adsbexchange
-    UUID_FILE="/usr/local/share/adsbexchange/adsbx-uuid"
+    mkdir -p /usr/local/share/adsb
+    UUID_FILE="/usr/local/share/adsb/adsb-uuid"
     # move old file position
-    if [ -f /boot/adsbx-uuid ]; then
-        mv -f /boot/adsbx-uuid $UUID_FILE
+    if [ -f /boot/adsb-uuid ]; then
+        mv -f /boot/adsb-uuid $UUID_FILE
     fi
 fi
 

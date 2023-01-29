@@ -17,7 +17,7 @@ JSON_OPTIONS="--json-location-accuracy 2"
 
 INPUT="127.0.0.1:30005"
 RESULTS="--results beast,connect,localhost:30104 --results basestation,listen,31003 --results beast,listen,30157"
-MLATSERVER="feed.adsbexchange.com:31090"
+MLATSERVER="feed.adsb.fi:31090"
 INPUT_TYPE="dump1090"
 #INPUT_TYPE="dump1090 --privacy"
 SERVERPORT="30005"

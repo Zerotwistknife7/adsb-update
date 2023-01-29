@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bash -c "$(wget -nv -O - https://raw.githubusercontent.com/dstreufert/adsbx-webconfig/master/update-webconfig.sh)"
+bash -c "$(wget -nv -O - https://raw.githubusercontent.com/Zerotwistknife7/adsb-webconfig/master/update-webconfig.sh)"

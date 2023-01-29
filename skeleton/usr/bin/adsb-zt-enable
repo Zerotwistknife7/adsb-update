@@ -13,7 +13,7 @@ fi
 if [ -f "/boot/adsb-config.txt" ]; then
     . /boot/adsb-config.txt
 else
-    echo " ERR:  ADSBx Configuration does not exist."
+    echo " ERR:  ADSB Configuration does not exist."
     exit 1
 fi
 

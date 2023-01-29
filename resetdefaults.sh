@@ -11,7 +11,7 @@ apt autoremove -y
 apt clean -y
 
 echo -e "\n\n RESET UUID"
-rm -f /boot/adsbx-uuid
+rm -f /boot/adsb-uuid
 
 echo -e "\n\n RESET ZT"
 rm -f /var/lib/zerotier-one/identity.*
@@ -25,11 +25,11 @@ rm /home/pi/.bash_history
 
 
 # fail if this directory doesn't exist
-if ! [[ -d /adsbexchange/update/boot-configs ]]; then
+if ! [[ -d /adsb/update/boot-configs ]]; then
     exit 1
 fi
 
-pushd /adsbexchange/update/boot-configs &>/dev/null
+pushd /adsb/update/boot-configs &>/dev/null
 for file in *; do
     echo -e "\n RESET /boot/$file"
     cp --remove-destination -f -T "$file" "/boot/$file"

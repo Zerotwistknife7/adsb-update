@@ -23,9 +23,9 @@ ALTITUDE=60440ft
 # Feeder Name for MLAT Map <br>
 ##No spaces or special characters.<br>
 ##Numbers, letters, underscore ( _ ) and period ( . ) only.
-USER=ADSBX_initial
+USER=adsb_initial
 
-# MLAT marker explanation: Marker with random 5 mile offset on https://map.adsbexchange.com/mlat-map/
+# MLAT marker explanation: Marker with random 5 mile offset on https://map.adsb.com/mlat-map/
 # offset is always on, the marker is shown with only the Feeder name / user as set directly above
 # Despite the offset and name of your choosing you can disable the marker:
 MLAT_MARKER=yes
@@ -43,7 +43,7 @@ AUTOGAIN=yes
 # Enable 978 UAT? (requires second SDR)
 DUMP978=no
 
-# Allow ADSBexchange staff to access this unit <br> remotely for troubleshooting via zerotier?
+# Allow ADSB staff to access this unit <br> remotely for troubleshooting via zerotier?
 ZEROTIER=no
 
 # Enable zerotier without allowing remote troubleshooting access

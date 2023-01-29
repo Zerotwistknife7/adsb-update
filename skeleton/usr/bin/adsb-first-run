@@ -21,7 +21,7 @@ function services-handle() {
         fi
     done
 }
-bash /usr/local/bin/adsbx-create-uuid.sh
+bash /usr/local/bin/adsb-create-uuid.sh
 bash /usr/local/bin/fix-config.sh
 if [ -f "/boot/adsb-config.txt" ]; then
 
@@ -36,7 +36,7 @@ if [ -f "/boot/adsb-config.txt" ]; then
 
     . /boot/adsb-config.txt
 
-    SERVICES_978="dump978-fa adsbexchange-978 tar1090-978"
+    SERVICES_978="dump978-fa adsb-978 tar1090-978"
     if [ ${DUMP978} == "yes" ]; then
         services-handle enable "$SERVICES_978"
     else
@@ -49,8 +49,8 @@ if [ -f "/boot/adsb-config.txt" ]; then
         services-handle disable autogain1090.timer
     fi
 
-    # readsb isn't disabled as the main map needs to stay for adsbexchange-stats and feeding 978
-    SERVICES_MLAT="adsbexchange-mlat"
+    # readsb isn't disabled as the main map needs to stay for adsb-stats and feeding 978
+    SERVICES_MLAT="adsb-mlat"
     if [ ${DUMP1090} == "yes" ] && [[ $USER != "disable" ]]; then
         services-handle enable "$SERVICES_MLAT"
     else

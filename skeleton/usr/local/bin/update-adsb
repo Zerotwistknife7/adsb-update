@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bash -c "$(wget -nv -O - https://raw.githubusercontent.com/Zerotwistknife7/adsb-update/main/update-adsb.sh)"

@@ -1,20 +1,20 @@
 [Unit]
-Description=adsbexchange-feed
+Description=adsb-feed
 Wants=network.target
 After=network.target
-After=adsbexchange-first-run.service
+After=adsb-first-run.service
 
 [Service]
-User=adsbexchange
+User=adsb
 EnvironmentFile=/boot/adsb-config.txt
-RuntimeDirectory=adsbexchange-feed
+RuntimeDirectory=adsb-feed
 RuntimeDirectoryMode=0755
-ExecStart=/usr/local/bin/adsbexchange-feed.sh
+ExecStart=/usr/local/bin/adsb-feed.sh
 Type=simple
 Restart=on-failure
 RestartSec=30
 RestartPreventExitStatus=64
-SyslogIdentifier=adsbexchange-feed
+SyslogIdentifier=adsb-feed
 
 [Install]
 WantedBy=default.target

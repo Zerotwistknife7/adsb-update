@@ -6,7 +6,7 @@ Before=ssh.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/adsbx-first-run
+ExecStart=/usr/bin/adsb-first-run
 WorkingDirectory=/run
 StandardOutput=inherit
 StandardError=inherit
